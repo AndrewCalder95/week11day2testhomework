@@ -1,0 +1,73 @@
+Polymorphism
+1. What does the word 'polymorphism' mean?
+
+Poly means ‘multi’ and morph means ‘shape’. Something polymorphic can have many forms. 
+
+
+2. What does it mean when we apply polymorphism to OO design? Give a simple Java example.
+
+We can treat an instance of a class as if it is also another class at the same time. For example, using a connect interface (called IConnect) to represent multiple devices that could connect to a computer (such as a printer, monitor or keyboard etc..)
+
+
+3. What can we use to implement polymorphism in Java?
+
+Abstract classes, inheritance and interfaces
+
+
+4. How many 'forms' can an object take when using polymorphism?
+
+As many as applicable to the project. 
+
+
+5. Give an example of when you could use polymorphism.
+
+When something ‘is a’ thing i.e a printer ‘is a’ connecting device. 
+
+
+Composition and Aggregation
+
+
+6. What do we mean by 'composition' in reference to object-oriented programming?
+
+
+Composition refers to a relationship where an object is ‘composed’ of and owns one or more other objects.
+
+
+7. When would you use composition? Provide a simple example in Java.
+
+
+We would use it when an object has another object i.e a camera has a lens:
+
+
+Class Lens{
+…}
+
+Class Camera{
+private Lens lens
+
+public Camera (Lens lens){
+this.lens = new Lens(..)
+
+
+8. Give a difference between composition and aggregation?
+
+
+Where an object is owned in composition, in aggregation the objects can exist independently.
+
+
+9. What is/are the advantage(s) of using composition/aggregation?
+
+
+Unlike using inheritance, it provides a lot of flexibility for your code and decreases tight coupling. 
+
+
+10. When using composition, when an object is destroyed, what happens to all the objects it is composed of?
+
+
+All of its behaviours are also destroyed.
+
+
+11. When using aggregation, when an object is destroyed, what happens to all the objects it is composed of?
+
+The object it 'owned' can still exist independently.
+
